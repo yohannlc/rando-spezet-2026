@@ -36,6 +36,7 @@ function updateMapStyle() {
 
 // Création de la map
 function createMap(myMapStyleUrl) {
+  mapboxgl.accessToken = 'pk.eyJ1IjoieW9oYW5ubGMiLCJhIjoiY2xnczI4cHJ1MGF4dDNsb2NienBja3pxbCJ9.pmfEZTINyfbOowGB0I77QA';
   let map = new mapboxgl.Map({
     container: 'map',
     style: myMapStyleUrl,
