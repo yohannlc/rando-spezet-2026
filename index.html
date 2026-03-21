@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rando Spézet 2026</title>
+
+    <script src="js\coordsCircuitsVtt.js"></script>
+    <script src="js\coordsCircuitsMarche.js"></script>
+    <script src="js\coordsPortions.js"></script>
+    <script src="js\coordsPoints.js"></script>
+    <script src="js\circuits.js"></script>
+    <script src="js\portions.js"></script>
+    <script src="js\points.js"></script>
+    <script src="js\polygons.js"></script>
+    <script src="js\change.js"></script>
+    <script src="js\hover.js"></script>
+    <script src="js\fleches.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css\style.css"/>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+    <!-- <div class="popup" id="popup">
+        <span class="close">&times;</span>
+        Projet de démonstration (données des portions périmées)
+    </div> -->
+    <div class="div-map">
+        <div id='map'></div>
+        <div class="">
+            <div id="divLegendId" class="legend">
+                <div class="flex">
+                    <div id="legendCircuitsVTT">
+                        <p class="bold">VTT</p>
+                        <div class="legend-circuit clickable"><span></span></div>
+                        <div class="legend-circuit clickable"><span></span></div>
+                        <div class="legend-circuit clickable"><span></span></div>
+                        <div class="legend-circuit clickable"><span></span></div>
+                        <div class="legend-circuit clickable"><span></span></div>
+                        <div class="legend-circuit clickable"><span></span></div>
+                    </div>
+                    <div id="legendCircuitsMarche">
+                        <p class="bold">Marche</p>
+                        <div class="legend-circuit clickable"><span></span>7km</div>
+                        <div class="legend-circuit clickable"><span></span>11km</div>
+                        <div class="legend-circuit clickable"><span></span>15km</div>
+                    </div>
+                </div>
+                <div id="legendPoints"><span style="background-color: rgb(0, 72, 255)" id="legendRavitos"></span>Ravitaillements</div>
+                <div id="legendPortions">
+                    <div class="legend-circuit"><span></span>Débroussailler</div>
+                    <div class="legend-circuit"><span></span>Souffler</div>
+                    <div class="legend-circuit"><span></span>Tronçonner</div>
+                    <div class="legend-circuit"><span></span>Pierre-Yves</div>
+                    <div class="legend-circuit"><span></span>Côtés</div>
+                </div>
+                
+            </div>
+
+            <div id="divParamsId" class="div-params">
+                <div id="typeAllCliqDiv" class="flex-column">
+                    <span class="label-cliq" value="">Circuits marches</span>
+                    <label class="switch">
+                        <input type="checkbox" id="typeAllCliq" onclick="toggleMarcheDisplay(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <!-- <div id="typeCliqDiv" class="flex-column">
+                    <span class="label-cliq" value="">Afficher les portions</span>
+                    <label class="switch">
+                        <input type="checkbox" id="typeCliq" onclick="togglePortionsDisplay(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div> -->
+
+                <div class="flex-column">
+                    <span class="label-cliq" value="">Vue satellite</span>
+                    <label class="switch">
+                        <input type="checkbox" id="mapStyleCheckbox" onclick="updateMapStyle()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <!-- <div id="cirqCliqDiv" class="flex-row">
+                    <span class="label-cliq" value="">Circuits cliquables</span>
+                    <label class="switch">
+                        <input type="checkbox" id="cirqCliq" onclick="changeCheckboxCircCliq()">
+                        <span class="slider"></span>
+                    </label>
+                </div> -->
+            </div>
+        </div>  
+        <script src="js\constants.js"></script>
+        <script src="js\listeners.js"></script>
+        <script src="js\mapbox.js"></script>
+    </div>
+
+    <div id="divTexteId" class="div-texte">
+        <div class="div-texte-top">
+            <h4 id="textId"></h4>
+            <span class="close" onclick="cacherDivTexteId()">&times;</span>
+        </div>
+        <div class="parag" id="descriptionId">
+            
+        </div>
+    </div>
+</body>
+</html>
