@@ -30,6 +30,7 @@ function addPoint(pointName, pointType, pointCoordinates, pointColor) {
 }
 
 function addRavitosVTT() {
+  addPoint("ravitoBallTrap", "ravito", ravitoBallTrap, colorRavito);
   addPoint("ravitoChantierForestier", "ravito", ravitoChantierForestier, colorRavito);
   addPoint("ravitoCudel1", "ravito", ravitoCudel1, colorRavito);
 }
