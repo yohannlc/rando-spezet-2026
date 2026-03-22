@@ -2,10 +2,12 @@ function addCircuitsVTT() {
     if ( mapStyle == 'outdoor') {
         for (let i = 0; i < listeCircuitsVtt.length; i++) {
             drawPortion(listeCircuitsVtt[i].id, "circuit", listeCircuitsVtt[i].coords, lineWidthCircuit, lineOpacityCircuit, listeCircuitsVtt[i].colorOut);
+            addFlecheForACircuit(listeCircuitsVtt[i].id);
         }
     } else {
         for (let i = 0; i < listeCircuitsVtt.length; i++) {
             drawPortion(listeCircuitsVtt[i].id, "circuit", listeCircuitsVtt[i].coords, lineWidthCircuit, lineOpacityCircuit, listeCircuitsVtt[i].colorSat);
+            addFlecheForACircuit(listeCircuitsVtt[i].id);
         }
     }
 }

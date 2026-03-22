@@ -117,7 +117,7 @@ function drawFlechesVtt(listeFlechesCircuitsVtt) {
         let circuitName = listeFlechesCircuitsVtt[i][6];
         for (let j = 0; j < listeCircuitsVtt.length; j++) {
             if (listeCircuitsVtt[j].id == circuitName) {
-                if (mapStyle == 'mapbox://styles/mapbox/outdoors-v12') {
+                if (mapStyle == 'outdoor') {
                     color = listeCircuitsVtt[j].colorOut;
                 } else {
                     color = listeCircuitsVtt[j].colorSat;
@@ -159,7 +159,7 @@ function drawFlechesMarche(listeFlechesCircuitsMarche) {
         let circuitName = listeFlechesCircuitsMarche[i][6];
         for (let j = 0; j < listeCircuitsMarche.length; j++) {
             if (listeCircuitsMarche[j].id == circuitName) {
-                if (mapStyle == 'mapbox://styles/mapbox/outdoors-v12') {
+                if (mapStyle == 'outdoor') {
                     color = listeCircuitsMarche[j].colorOut;
                 } else {
                     color = listeCircuitsMarche[j].colorSat;

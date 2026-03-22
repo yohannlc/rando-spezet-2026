@@ -203,14 +203,15 @@ if (checkboxMapStyle == true) {
 const distanceBetweenFleches = 0.6;
 const longueurFleche = 0.001;
 const angleFleche = 145;
-const lineWidthFleche = 3;
+const lineWidthFleche = 5;
 
 const listeChoosenFlechesVtt = [
-  { id: listeCircuitsVtt[0].id, points: [90, 427, 835, 941, 1073, 1800, 2300, 2627, 3433] },
-  { id: listeCircuitsVtt[1].id, points: [50, 124, 216, 1045, 1500, 1835, 2619] },
-  { id: listeCircuitsVtt[2].id, points: [13, 52, 215, 800, 1437, 1865] },
-  { id: listeCircuitsVtt[3].id, points: [59, 200, 400, 1095, 1422] },
-  { id: listeCircuitsVtt[4].id, points: [12, 61, 151, 578] },
+  { id: listeCircuitsVtt[0].id, points: [645, 945, 1360, 1915] },
+  { id: listeCircuitsVtt[1].id, points: [250, 858, 1410, 1650] },
+  { id: listeCircuitsVtt[2].id, points: [300, 450, 645, 1400] },
+  { id: listeCircuitsVtt[3].id, points: [125, 985] },
+  { id: listeCircuitsVtt[4].id, points: [250, 525] },
+  { id: listeCircuitsVtt[5].id, points: [43, 258, 600, 785] },
 ]
 
 const listeChoosenFlechesMarche = [
